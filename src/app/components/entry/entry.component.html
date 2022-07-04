@@ -3,7 +3,7 @@
         <img class="w-16 mx-auto relative top-3" src="{{iconPath}}" alt="organization logo">
     </div>
     <div class="col-span-5 mb-3">
-        <h5 class="text-sm relative top-1" [ngClass]="entryType == 'work' ? 'text-green-400' : 'text-red-400'">{{entryType}}</h5>
+        <h1 class="text-sm relative top-1" [ngClass]="entryType == 'work' ? 'text-green-400' : 'text-red-400'">{{entryType}}</h1>
         <h1 class="text-xl font-medium">{{title}}</h1>
         <h2 class="text-sm font-thin">{{start}} - {{end}} ({{amountOfTime(start, end)}} yrs)</h2>
     </div>
