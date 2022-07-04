@@ -1,8 +1,10 @@
-<div class="grid grid-cols-1 gap-4 max-w-2xl md:grid-flow-col md:grid-cols-3 md:max-w-4xl mx-auto p-8">
-  <div class="col-span-3 md:col-span-1">
+<div class="grid grid-cols-1 gap-4 max-w-2xl md:grid-flow-col md:grid-cols-3 md:max-w-4xl mx-auto p-8 md:overflow-hidden">
+  <div class="col-span-1 md:col-span-1">
     <app-bio></app-bio>
   </div>
-  <div class="col-span-3 md:col-span-2">
-    <app-entry></app-entry>
+  <div class="col-span-1 md:col-span-2 overflow-scroll md:max-h-[90vh] md:pr-6">
+    <app-entry iconPath="../assets/bigbear.png" entryType="work" title="bigbear.ai | Software Engineer" startDate="4/1/2019"></app-entry>
+    <app-entry iconPath="../assets/mccc.png" entryType="school" title="Monroe County Community College | AS" startDate="1/1/2016" endDate="4/1/2018"></app-entry>
+    <app-entry iconPath="../assets/nps.png" entryType="work" title="National Park Service | Student Ranger" startDate="5/1/2015" endDate="8/1/2018"></app-entry>
   </div>
 </div>

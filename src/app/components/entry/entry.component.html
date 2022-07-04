@@ -1,1 +1,19 @@
-<p>entry works!</p>
+<div class="grid grid-cols-6 mb-4">
+    <div class="col-span-1">
+        <img class="w-16 mx-auto relative top-3" src="{{iconPath}}" alt="organization logo">
+    </div>
+    <div class="col-span-5 mb-3">
+        <h5 class="text-sm relative top-1" [ngClass]="entryType == 'work' ? 'text-green-400' : 'text-red-400'">{{entryType}}</h5>
+        <h1 class="text-xl font-medium">{{title}}</h1>
+        <h2 class="text-sm font-thin">{{start}} - {{end}} ({{amountOfTime(start, end)}} yrs)</h2>
+    </div>
+
+    <div class="col-span-1 bg-white opacity-5 bg-opacity-40 w-1 mx-auto relative bottom-1">
+    </div>
+    <div class="col-span-5">
+        <p class="font-extralight">Have worked as a contributor to several Agile development teams on Department of Defense contracts. 
+            As a Software Engineer, my responsibilities have centered on designing and creating components based on mockups or written text from user stories, and maintaining various Angular projects additionally using NGRX for state, SCSS for stylesheets, and NX for our Monorepo.
+            Additionally, helping to maintain and update REST endpoints in our .NET Core server, integrate new data sources, and maintain and create various unit tests is an occasional responsibility.
+            I also contribute to the UI/UX lifecycle of our project by providing mock-ups for user stories, building responsive layouts with CSS Grid and Flexbox, and by implementing components from several external libraries such as PrimeNG and Angular Material.</p>
+    </div>
+</div>
